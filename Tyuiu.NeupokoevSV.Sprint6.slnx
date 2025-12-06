@@ -1,0 +1,27 @@
+<Solution>
+  <Folder Name="/Task0/">
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task0.V3.Lib/Tyuiu.NeupokoevSV.Sprint6.Task0.V3.Lib.csproj" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task0.V3.Test/Tyuiu.NeupokoevSV.Sprint6.Task0.V3.Test.csproj" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task0.V3/Tyuiu.NeupokoevSV.Sprint6.Task0.V3.csproj" />
+  </Folder>
+  <Folder Name="/Task1/">
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task1.V20.Lib/Tyuiu.NeupokoevSV.Sprint6.Task1.V20.Lib.csproj" Id="242478da-3bda-4acd-86e2-5b8cfd0fd416" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task1.V20.Test/Tyuiu.NeupokoevSV.Sprint6.Task1.V20.Test.csproj" Id="91354f2e-7155-4930-82ef-ed16566fa8de" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task1.V20/Tyuiu.NeupokoevSV.Sprint6.Task1.V20.csproj" Id="402b6a22-627e-4928-8693-06a329379e8b" />
+  </Folder>
+  <Folder Name="/Task2/">
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task2.V2.Lib/Tyuiu.NeupokoevSV.Sprint6.Task2.V2.Lib.csproj" Id="a54e0134-8cbe-4b04-9dc1-d18498da3ee4" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task2.V2.Test/Tyuiu.NeupokoevSV.Sprint6.Task2.V2.Test.csproj" Id="8d2ca01b-e46d-474f-8a6a-c8ab304bccfc" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task2.V2/Tyuiu.NeupokoevSV.Sprint6.Task2.V2.csproj" Id="9b85ec26-7d82-4470-a49f-701ea820d3a2" />
+  </Folder>
+  <Folder Name="/Task3/">
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task3.V7.Lib/Tyuiu.NeupokoevSV.Sprint6.Task3.V7.Lib.csproj" Id="c515fd47-34f9-41e3-b984-74bcc3e334ed" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task3.V7.Test/Tyuiu.NeupokoevSV.Sprint6.Task3.V7.Test.csproj" Id="8f31a5de-d194-4368-a8c8-57a3a7490507" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task3.V7/Tyuiu.NeupokoevSV.Sprint6.Task3.V7.csproj" Id="86d2f0ba-628d-4ae1-aab6-99be9c23a3ee" />
+  </Folder>
+  <Folder Name="/Task4/">
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task4.V19.Lib/Tyuiu.NeupokoevSV.Sprint6.Task4.V19.Lib.csproj" Id="82f8d3f7-45ad-424e-8818-d41d8fdafadf" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task4.V19.Test/Tyuiu.NeupokoevSV.Sprint6.Task4.V19.Test.csproj" Id="f1a2b63f-1727-465a-b9e3-ba32dee5b07e" />
+    <Project Path="Tyuiu.NeupokoevSV.Sprint6.Task4.V19/Tyuiu.NeupokoevSV.Sprint6.Task4.V19.csproj" Id="c97bbd7d-2b69-48ad-a1bf-f1e8a3e1d78d" />
+  </Folder>
+</Solution>
