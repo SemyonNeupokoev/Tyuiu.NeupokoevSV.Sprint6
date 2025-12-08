@@ -8,7 +8,7 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task6.V30.Lib
             string result = "";
 
             using (StreamReader reader = new StreamReader(path))
-            { 
+            {
                 string line;
                 bool firstWord = true; // Флаг для первого слова (чтобы не ставить пробел перед ним)
 
