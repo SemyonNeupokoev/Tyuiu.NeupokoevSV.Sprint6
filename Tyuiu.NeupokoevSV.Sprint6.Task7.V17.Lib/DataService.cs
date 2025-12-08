@@ -28,9 +28,9 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task7.V17.Lib
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (arrayValues[i, 2] % 2 == 0)
+                    if (arrayValues[2, j] % 2 == 0)
                     {
-                        arrayValues[i, 2] = 4;
+                        arrayValues[2, j] = 4;
                     }
                 }
             }
