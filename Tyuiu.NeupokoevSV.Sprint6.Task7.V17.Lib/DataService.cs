@@ -23,7 +23,7 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task7.V17.Lib
                     arrayValues[i, j] = Convert.ToInt32(line_r[j]);
                 }
             }
-
+             
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
