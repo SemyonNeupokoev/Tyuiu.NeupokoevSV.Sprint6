@@ -7,34 +7,35 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task7.V17.Lib
         public int[,] GetMatrix(string path)
         {
             string fileData = File.ReadAllText(path);
-            int[,] Matrix = new int[10, 10]
-        {
-            { 1, -8, 5, -17, -15, -11, -9, 1, 3, 19 },
-            { 4, -8, 16, 3, -12, -3, 8, -12, 15, 16 },
-            { -15, -1, 10, -7, 8, 2, -20, -1, 2, -1 },
-            { -12, 10, -18, -11, -12, -16, -14, 16, 1, -5 },
-            { 5, 14, -11, -3, 10, -19, -1, -12, -5, -20 },
-            { -7, -16, -4, 0, 10, 4, -3, -7, -7, -17 },
-            { -18, 7, -13, -2, 18, -8, -16, 15, 17, 11 },
-            { 7, 5, 6, -7, 9, -9, -11, -13, 19, -4 },
-            { -5, 14, -2, -9, 18, 16, 20, -14, 7, 17 },
-            { -9, 8, 2, 4, -3, -14, 16, 17, -9, 17 }
-        };
-            int rows = 10;
-            int cols = 10; 
-            int xcol = 2;
-            for (int r  = 0; r < rows; r++)
+            fileData = fileData.Replace('\n', '\r');
+            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+
+
+            int rows = lines.Length;
+            int columns = lines[0].Split(';').Length;
+            int[,] arrayValues = new int[rows, columns];
+
+            for (int i = 0; i < rows; i++)
             {
-                for (int c = xcol;  c <= cols; c++)
+                string[] line_r = lines[i].Split(';');
+                for (int j = 0; j < columns; j++)
                 {
-                    if (Matrix[r, c] % 2 == 0)
+                    arrayValues[i, j] = Convert.ToInt32(line_r[j]);
+                }
+            }
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    if (arrayValues[i, 2] % 2 == 0)
                     {
-                        Matrix[r, c] = 4;
+                        arrayValues[i, 2] = 4;
                     }
                 }
             }
-            return Matrix;
-        }
+            return arrayValues;
 
+        }
     }
 }
