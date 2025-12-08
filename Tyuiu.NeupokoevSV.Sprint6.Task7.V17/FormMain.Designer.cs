@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panelKnopkii_NSV = new Panel();
             buttonHelp_NSV = new Button();
-            button3 = new Button();
+            buttonSohr_NSV = new Button();
             buttonVipoln_NSV = new Button();
             buttonFileOpen_NSV = new Button();
             panelUsl_NSV = new Panel();
             groupBoxUsl_NSV = new GroupBox();
-            textBox1 = new TextBox();
-            splitContainer1 = new SplitContainer();
+            textBoxUsl_NSV = new TextBox();
+            splitContainer_NSV = new SplitContainer();
             groupBoxVvod_NSV = new GroupBox();
             dataGridViewIn = new DataGridView();
             groupBoxVivod_NSV = new GroupBox();
@@ -49,10 +49,10 @@
             panelKnopkii_NSV.SuspendLayout();
             panelUsl_NSV.SuspendLayout();
             groupBoxUsl_NSV.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
-            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer_NSV).BeginInit();
+            splitContainer_NSV.Panel1.SuspendLayout();
+            splitContainer_NSV.Panel2.SuspendLayout();
+            splitContainer_NSV.SuspendLayout();
             groupBoxVvod_NSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewIn).BeginInit();
             groupBoxVivod_NSV.SuspendLayout();
@@ -62,7 +62,7 @@
             // panelKnopkii_NSV
             // 
             panelKnopkii_NSV.Controls.Add(buttonHelp_NSV);
-            panelKnopkii_NSV.Controls.Add(button3);
+            panelKnopkii_NSV.Controls.Add(buttonSohr_NSV);
             panelKnopkii_NSV.Controls.Add(buttonVipoln_NSV);
             panelKnopkii_NSV.Controls.Add(buttonFileOpen_NSV);
             panelKnopkii_NSV.Dock = DockStyle.Top;
@@ -81,17 +81,21 @@
             buttonHelp_NSV.TabIndex = 1;
             toolTip_NSV.SetToolTip(buttonHelp_NSV, "Информация о программисте\r\n");
             buttonHelp_NSV.UseVisualStyleBackColor = true;
+            buttonHelp_NSV.Click += buttonHelp_NSV_Click;
+            buttonHelp_NSV.MouseEnter += buttonHelp_NSV_MouseEnter;
             // 
-            // button3
+            // buttonSohr_NSV
             // 
-            button3.Enabled = false;
-            button3.Image = Properties.Resources.folder_page_white;
-            button3.Location = new Point(179, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(79, 52);
-            button3.TabIndex = 0;
-            toolTip_NSV.SetToolTip(button3, "Сохранить обработанные данные в файл в формате csv\r\n\r\n");
-            button3.UseVisualStyleBackColor = true;
+            buttonSohr_NSV.Enabled = false;
+            buttonSohr_NSV.Image = Properties.Resources.folder_page_white;
+            buttonSohr_NSV.Location = new Point(179, 3);
+            buttonSohr_NSV.Name = "buttonSohr_NSV";
+            buttonSohr_NSV.Size = new Size(79, 52);
+            buttonSohr_NSV.TabIndex = 0;
+            toolTip_NSV.SetToolTip(buttonSohr_NSV, "Сохранить обработанные данные в файл в формате csv\r\n\r\n");
+            buttonSohr_NSV.UseVisualStyleBackColor = true;
+            buttonSohr_NSV.Click += buttonSohr_NSV_Click;
+            buttonSohr_NSV.MouseEnter += buttonSohr_NSV_MouseEnter;
             // 
             // buttonVipoln_NSV
             // 
@@ -103,6 +107,8 @@
             buttonVipoln_NSV.TabIndex = 0;
             toolTip_NSV.SetToolTip(buttonVipoln_NSV, "Выполнить обработку данных\r\n");
             buttonVipoln_NSV.UseVisualStyleBackColor = true;
+            buttonVipoln_NSV.Click += buttonVipoln_NSV_Click;
+            buttonVipoln_NSV.MouseEnter += buttonVipoln_NSV_MouseEnter;
             // 
             // buttonFileOpen_NSV
             // 
@@ -115,6 +121,7 @@
             toolTip_NSV.SetToolTip(buttonFileOpen_NSV, "Открыть файл\r\nВыберите файл для обработки\r\n\r\n\r\n");
             buttonFileOpen_NSV.UseVisualStyleBackColor = true;
             buttonFileOpen_NSV.Click += buttonFileOpen_NSV_Click;
+            buttonFileOpen_NSV.MouseEnter += buttonFileOpen_NSV_MouseEnter;
             // 
             // panelUsl_NSV
             // 
@@ -127,7 +134,7 @@
             // 
             // groupBoxUsl_NSV
             // 
-            groupBoxUsl_NSV.Controls.Add(textBox1);
+            groupBoxUsl_NSV.Controls.Add(textBoxUsl_NSV);
             groupBoxUsl_NSV.Dock = DockStyle.Fill;
             groupBoxUsl_NSV.Font = new Font("Segoe UI", 12F);
             groupBoxUsl_NSV.Location = new Point(0, 0);
@@ -137,36 +144,37 @@
             groupBoxUsl_NSV.TabStop = false;
             groupBoxUsl_NSV.Text = "Условие";
             // 
-            // textBox1
+            // textBoxUsl_NSV
             // 
-            textBox1.BackColor = SystemColors.Menu;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Font = new Font("Microsoft Sans Serif", 10F);
-            textBox1.Location = new Point(3, 25);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(977, 54);
-            textBox1.TabIndex = 0;
-            textBox1.Text = resources.GetString("textBox1.Text");
+            textBoxUsl_NSV.BackColor = SystemColors.Menu;
+            textBoxUsl_NSV.BorderStyle = BorderStyle.None;
+            textBoxUsl_NSV.Dock = DockStyle.Fill;
+            textBoxUsl_NSV.Font = new Font("Microsoft Sans Serif", 10F);
+            textBoxUsl_NSV.Location = new Point(3, 25);
+            textBoxUsl_NSV.Multiline = true;
+            textBoxUsl_NSV.Name = "textBoxUsl_NSV";
+            textBoxUsl_NSV.ReadOnly = true;
+            textBoxUsl_NSV.Size = new Size(977, 54);
+            textBoxUsl_NSV.TabIndex = 0;
+            textBoxUsl_NSV.Text = resources.GetString("textBoxUsl_NSV.Text");
             // 
-            // splitContainer1
+            // splitContainer_NSV
             // 
-            splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(0, 137);
-            splitContainer1.Name = "splitContainer1";
+            splitContainer_NSV.Dock = DockStyle.Fill;
+            splitContainer_NSV.Location = new Point(0, 137);
+            splitContainer_NSV.Name = "splitContainer_NSV";
             // 
-            // splitContainer1.Panel1
+            // splitContainer_NSV.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(groupBoxVvod_NSV);
+            splitContainer_NSV.Panel1.Controls.Add(groupBoxVvod_NSV);
             // 
-            // splitContainer1.Panel2
+            // splitContainer_NSV.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(groupBoxVivod_NSV);
-            splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
-            splitContainer1.Size = new Size(983, 413);
-            splitContainer1.SplitterDistance = 491;
-            splitContainer1.TabIndex = 1;
+            splitContainer_NSV.Panel2.Controls.Add(groupBoxVivod_NSV);
+            splitContainer_NSV.Panel2.Paint += splitContainer1_Panel2_Paint;
+            splitContainer_NSV.Size = new Size(983, 413);
+            splitContainer_NSV.SplitterDistance = 491;
+            splitContainer_NSV.TabIndex = 1;
             // 
             // groupBoxVvod_NSV
             // 
@@ -214,12 +222,19 @@
             // 
             openFileDialog_NSV.FileName = "openFileDialog1";
             // 
+            // toolTip_NSV
+            // 
+            toolTip_NSV.ForeColor = SystemColors.Highlight;
+            toolTip_NSV.IsBalloon = true;
+            toolTip_NSV.ToolTipTitle = "Подсказка";
+            toolTip_NSV.Popup += toolTip_NSV_Popup;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(983, 550);
-            Controls.Add(splitContainer1);
+            Controls.Add(splitContainer_NSV);
             Controls.Add(panelUsl_NSV);
             Controls.Add(panelKnopkii_NSV);
             Name = "FormMain";
@@ -229,10 +244,10 @@
             panelUsl_NSV.ResumeLayout(false);
             groupBoxUsl_NSV.ResumeLayout(false);
             groupBoxUsl_NSV.PerformLayout();
-            splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-            splitContainer1.ResumeLayout(false);
+            splitContainer_NSV.Panel1.ResumeLayout(false);
+            splitContainer_NSV.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer_NSV).EndInit();
+            splitContainer_NSV.ResumeLayout(false);
             groupBoxVvod_NSV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewIn).EndInit();
             groupBoxVivod_NSV.ResumeLayout(false);
@@ -243,14 +258,14 @@
         #endregion
         private Panel panelKnopkii_NSV;
         private Panel panelUsl_NSV;
-        private SplitContainer splitContainer1;
+        private SplitContainer splitContainer_NSV;
         private GroupBox groupBoxUsl_NSV;
         private GroupBox groupBoxVvod_NSV;
         private GroupBox groupBoxVivod_NSV;
-        private TextBox textBox1;
+        private TextBox textBoxUsl_NSV;
         private DataGridView dataGridViewIn;
         private DataGridView dataGridViewOut;
-        private Button button3;
+        private Button buttonSohr_NSV;
         private Button buttonVipoln_NSV;
         private Button buttonFileOpen_NSV;
         private SaveFileDialog saveFileDialog_NSV;
