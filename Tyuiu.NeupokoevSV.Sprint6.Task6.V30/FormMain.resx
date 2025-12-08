@@ -120,9 +120,6 @@
   <metadata name="toolTip_NSV.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>156, 17</value>
   </metadata>
-  <metadata name="toolTip_NSV.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>156, 17</value>
-  </metadata>
   <data name="textBoxUsl_NSV.Text" xml:space="preserve">
     <value>Дан файл InPutFileTask6.txt, который может находиться в лбом месте на диске. Загрузите файл в textBoxVvod_NSV через openfileDialog найти в каждой строке файла все 4 слова, удалить их и вывести в textboxVivod_NSV.
 </value>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tyuiu.NeupokoevSV.Sprint6.Task6.V30.Properties {
+namespace Tyuiu.NeupokoevSV.Sprint6.Task7.V17.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task6.V30.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.NeupokoevSV.Sprint6.Task6.V30.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Tyuiu.NeupokoevSV.Sprint6.Task7.V17.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,16 +63,6 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task6.V30.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap aa {
-            get {
-                object obj = ResourceManager.GetObject("aa", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap folder_add {
             get {
                 object obj = ResourceManager.GetObject("folder_add", resourceCulture);
@@ -86,6 +76,16 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task6.V30.Properties {
         internal static System.Drawing.Bitmap folder_go {
             get {
                 object obj = ResourceManager.GetObject("folder_go", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap folder_page_white {
+            get {
+                object obj = ResourceManager.GetObject("folder_page_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

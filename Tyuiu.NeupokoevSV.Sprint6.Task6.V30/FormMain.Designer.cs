@@ -68,6 +68,7 @@
             // 
             // buttonSearchInFile_NSV
             // 
+            buttonSearchInFile_NSV.Enabled = false;
             buttonSearchInFile_NSV.Image = Properties.Resources.folder_go;
             buttonSearchInFile_NSV.Location = new Point(140, 10);
             buttonSearchInFile_NSV.Name = "buttonSearchInFile_NSV";
@@ -79,12 +80,14 @@
             // 
             // buttonVopros_NSV
             // 
+            buttonVopros_NSV.Dock = DockStyle.Right;
             buttonVopros_NSV.Image = Properties.Resources.help;
-            buttonVopros_NSV.Location = new Point(873, 10);
+            buttonVopros_NSV.Location = new Point(872, 0);
             buttonVopros_NSV.Name = "buttonVopros_NSV";
-            buttonVopros_NSV.Size = new Size(74, 58);
+            buttonVopros_NSV.Size = new Size(93, 76);
             buttonVopros_NSV.TabIndex = 0;
             buttonVopros_NSV.UseVisualStyleBackColor = true;
+            buttonVopros_NSV.Click += buttonVopros_NSV_Click;
             // 
             // buttonFileOpen_NSV
             // 
@@ -109,10 +112,11 @@
             // groupBoxUsl_NSV
             // 
             groupBoxUsl_NSV.Controls.Add(textBoxUsl_NSV);
+            groupBoxUsl_NSV.Dock = DockStyle.Fill;
             groupBoxUsl_NSV.Font = new Font("Segoe UI", 12F);
-            groupBoxUsl_NSV.Location = new Point(12, 1);
+            groupBoxUsl_NSV.Location = new Point(0, 0);
             groupBoxUsl_NSV.Name = "groupBoxUsl_NSV";
-            groupBoxUsl_NSV.Size = new Size(941, 100);
+            groupBoxUsl_NSV.Size = new Size(965, 108);
             groupBoxUsl_NSV.TabIndex = 0;
             groupBoxUsl_NSV.TabStop = false;
             groupBoxUsl_NSV.Text = "Условие";
@@ -121,11 +125,12 @@
             // 
             textBoxUsl_NSV.BackColor = SystemColors.Menu;
             textBoxUsl_NSV.BorderStyle = BorderStyle.None;
-            textBoxUsl_NSV.Location = new Point(6, 19);
+            textBoxUsl_NSV.Dock = DockStyle.Fill;
+            textBoxUsl_NSV.Location = new Point(3, 25);
             textBoxUsl_NSV.Multiline = true;
             textBoxUsl_NSV.Name = "textBoxUsl_NSV";
             textBoxUsl_NSV.ReadOnly = true;
-            textBoxUsl_NSV.Size = new Size(929, 75);
+            textBoxUsl_NSV.Size = new Size(959, 80);
             textBoxUsl_NSV.TabIndex = 0;
             textBoxUsl_NSV.Text = resources.GetString("textBoxUsl_NSV.Text");
             // 
@@ -150,10 +155,11 @@
             // groupBoxVvod_NSV
             // 
             groupBoxVvod_NSV.Controls.Add(textBoxVvod_NSV);
+            groupBoxVvod_NSV.Dock = DockStyle.Fill;
             groupBoxVvod_NSV.Font = new Font("Segoe UI", 12F);
-            groupBoxVvod_NSV.Location = new Point(3, 6);
+            groupBoxVvod_NSV.Location = new Point(0, 0);
             groupBoxVvod_NSV.Name = "groupBoxVvod_NSV";
-            groupBoxVvod_NSV.Size = new Size(476, 362);
+            groupBoxVvod_NSV.Size = new Size(482, 371);
             groupBoxVvod_NSV.TabIndex = 0;
             groupBoxVvod_NSV.TabStop = false;
             groupBoxVvod_NSV.Text = "Ввод";
@@ -163,21 +169,23 @@
             // 
             textBoxVvod_NSV.BackColor = SystemColors.ButtonHighlight;
             textBoxVvod_NSV.BorderStyle = BorderStyle.None;
-            textBoxVvod_NSV.Location = new Point(6, 19);
+            textBoxVvod_NSV.Dock = DockStyle.Fill;
+            textBoxVvod_NSV.Location = new Point(3, 25);
             textBoxVvod_NSV.Multiline = true;
             textBoxVvod_NSV.Name = "textBoxVvod_NSV";
             textBoxVvod_NSV.ReadOnly = true;
             textBoxVvod_NSV.ScrollBars = ScrollBars.Vertical;
-            textBoxVvod_NSV.Size = new Size(464, 337);
+            textBoxVvod_NSV.Size = new Size(476, 343);
             textBoxVvod_NSV.TabIndex = 0;
             // 
             // groupBoxVivod_NSV
             // 
             groupBoxVivod_NSV.Controls.Add(textBoxVivod_NSV);
+            groupBoxVivod_NSV.Dock = DockStyle.Fill;
             groupBoxVivod_NSV.Font = new Font("Segoe UI", 12F);
-            groupBoxVivod_NSV.Location = new Point(3, 6);
+            groupBoxVivod_NSV.Location = new Point(0, 0);
             groupBoxVivod_NSV.Name = "groupBoxVivod_NSV";
-            groupBoxVivod_NSV.Size = new Size(473, 362);
+            groupBoxVivod_NSV.Size = new Size(479, 371);
             groupBoxVivod_NSV.TabIndex = 0;
             groupBoxVivod_NSV.TabStop = false;
             groupBoxVivod_NSV.Text = "Вывод";
@@ -186,12 +194,13 @@
             // 
             textBoxVivod_NSV.BackColor = SystemColors.ButtonHighlight;
             textBoxVivod_NSV.BorderStyle = BorderStyle.None;
-            textBoxVivod_NSV.Location = new Point(6, 19);
+            textBoxVivod_NSV.Dock = DockStyle.Fill;
+            textBoxVivod_NSV.Location = new Point(3, 25);
             textBoxVivod_NSV.Multiline = true;
             textBoxVivod_NSV.Name = "textBoxVivod_NSV";
             textBoxVivod_NSV.ReadOnly = true;
             textBoxVivod_NSV.ScrollBars = ScrollBars.Vertical;
-            textBoxVivod_NSV.Size = new Size(461, 337);
+            textBoxVivod_NSV.Size = new Size(473, 343);
             textBoxVivod_NSV.TabIndex = 0;
             // 
             // openFileDialog_NSV

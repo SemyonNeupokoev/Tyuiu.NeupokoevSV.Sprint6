@@ -5,12 +5,12 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task6.V30
 {
     public partial class FormMain : Form
     {
-        
+
         public FormMain()
         {
             InitializeComponent();
         }
-        string openFilePath;    
+        string openFilePath;
         DataService ds = new DataService();
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -28,7 +28,13 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task6.V30
             openFilePath = openFileDialog_NSV.FileName;
             textBoxVvod_NSV.Text = File.ReadAllText(openFilePath);
             groupBoxVvod_NSV.Text = groupBoxVvod_NSV.Text + " " + openFileDialog_NSV.FileName;
-            buttonFileOpen_NSV.Enabled = true;
+            buttonSearchInFile_NSV.Enabled = true;
+        }
+
+        private void buttonVopros_NSV_Click(object sender, EventArgs e)
+        {
+            FormAsk formAsk = new FormAsk();
+            formAsk.ShowDialog();
         }
     }
 }
