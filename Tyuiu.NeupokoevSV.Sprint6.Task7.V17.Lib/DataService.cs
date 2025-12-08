@@ -21,7 +21,7 @@ namespace Tyuiu.NeupokoevSV.Sprint6.Task7.V17.Lib
             { -9, 8, 2, 4, -3, -14, 16, 17, -9, 17 }
         };
             int rows = 10;
-            int cols = 10;
+            int cols = 10; 
             int xcol = 2;
             for (int r  = 0; r < rows; r++)
             {
